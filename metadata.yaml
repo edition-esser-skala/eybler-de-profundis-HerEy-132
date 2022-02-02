@@ -2,21 +2,24 @@ composer:
   last: Eybler
   first: Joseph Leopold Edler von
 title: De profundis
+subtitle: Psalm 130/129
 id: HerEy 132
 genre: psalm
-scoring: S, A, T, B (coro), 2 ob, 2 cl (\flat B), 2 fag, 2 clno (\flat B), timp (\flat B–F), 2 vl, vla, vlc, cb, [bc]
+scoring: S, A, T, B (coro), 2 ob, 2 cl (\flat B), 2 fag,\\2 clno (\flat B), timp (\flat B–F), 2 vl, vla, vlc, cb, [bc]
 license: cc-by-sa-4.0
 sources:
   B1:
     siglum: A-Wn
     shelfmark: HK.2147/1
     date: 1850
-    rism:
+    rism: 600243144
     url: https://data.onb.ac.at/rec/AC14265982
     license: public domain
     principal: true
-imslp:
+    notes: digitized version available from \url{https://data.onb.ac.at/rec/AC14266094}
+imslp: De_profundis,_HV_132_(Eybler,_Joseph)
 parts:
   cl1: Clarinetto I in \flat B
   cl2: Clarinetto II in \flat B
-  ottoni: Clarino I, II in \flat B\\Timpani in flat B–F
+  ottoni: Clarino I, II in \flat B\\Timpani in \flat B–F
+  b: Violoncello\\Contrabasso
