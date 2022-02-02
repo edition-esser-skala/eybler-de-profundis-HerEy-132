@@ -5,7 +5,7 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "De profundis"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
@@ -13,33 +13,33 @@
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "Soprano"
-            \new Voice = "Soprano" { \dynamicUp \xxxSoprano }
+            \new Voice = "Soprano" { \dynamicUp \Soprano }
           }
-          \new Lyrics \lyricsto Soprano \xxxSopranoLyrics
+          \new Lyrics \lyricsto Soprano \SopranoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Alto"
-            \new Voice = "Alto" { \dynamicUp \xxxAlto }
+            \new Voice = "Alto" { \dynamicUp \Alto }
           }
-          \new Lyrics \lyricsto Alto \xxxAltoLyrics
+          \new Lyrics \lyricsto Alto \AltoLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Tenore"
-            \new Voice = "Tenore" { \dynamicUp \xxxTenore }
+            \new Voice = "Tenore" { \dynamicUp \Tenore }
           }
-          \new Lyrics \lyricsto Tenore \xxxTenoreLyrics
+          \new Lyrics \lyricsto Tenore \TenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "Basso"
-            \new Voice = "Basso" { \dynamicUp \xxxBasso }
+            \new Voice = "Basso" { \dynamicUp \Basso }
           }
-          \new Lyrics \lyricsto Basso \xxxBassoLyrics
+          \new Lyrics \lyricsto Basso \BassoLyrics
         >>
         \new Staff {
-          \set Staff.instrumentName = "Organo"
-          \xxxOrgano
+          \set Staff.instrumentName = \markup \center-column { "Violoncello" "Contrabasso" }
+          \BassoContinuo
         }
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \BassFigures }
       >>
     }
   }

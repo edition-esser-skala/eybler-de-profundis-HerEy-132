@@ -7,27 +7,27 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "De profundis"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
         \new StaffGroup <<
           \new GrandStaff <<
-            \set GrandStaff.instrumentName = \transposedName "Clarino" "C" ""
+            \set GrandStaff.instrumentName = \transposedName "Clarino" "B" "flat"
             \new Staff {
               \set Staff.instrumentName = "I"
-              \xxxClarinoI
+              \ClarinoI
             }
             \new Staff {
               \set Staff.instrumentName = "II"
-              \xxxClarinoII
+              \ClarinoII
             }
           >>
         >>
         \new Staff {
-          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
-          \xxxTimpani
+          \set Staff.instrumentName = \transposedTimp "B" "flat" "F" ""
+          \Timpani
         }
       >>
     }

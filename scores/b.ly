@@ -6,24 +6,15 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "De profundis"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2.5\cm }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Bassi"
-          \xxxOrgano
+          \set Staff.instrumentName = \markup \center-column { "Violoncello" "Contrabasso" }
+          \BassoContinuo
         }
-      >>
-    }
-  }
-  \bookpart {
-    \section "2" "Second"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \yyyOrgano }
       >>
     }
   }
