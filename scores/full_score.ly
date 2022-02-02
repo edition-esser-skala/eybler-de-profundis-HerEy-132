@@ -13,21 +13,26 @@
         \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = "Oboe I, II"
+            \set Staff.soloText = \markup \remark \medium "ob 1"
             \partCombine \OboeI \OboeII
           >>
           \new Staff <<
             \set Staff.instrumentName = \transposedName "Clarinetto I, II" "B" "flat"
+            \set Staff.soloText = \markup \remark \medium "cl 1"
+            \set Staff.soloIIText = \markup \remark \medium "cl 2"
             % \transpose c b,
             \partCombine \ClarinettoI \ClarinettoII
           >>
           \new Staff <<
             \set Staff.instrumentName = "Fagotto I, II"
+            \set Staff.soloText = \markup \remark \medium "fag 1"
             \partCombine \FagottoI \FagottoII
           >>
         >>
         \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \transposedName "Clarino I, II" "B" "flat"
+            \set Staff.soloText = \markup \remark \medium "clno 1"
             % \transpose c b,
             \partCombine \ClarinoI \ClarinoII
           >>
@@ -52,10 +57,6 @@
           \new Staff {
             \set Staff.instrumentName = "Viola"
             \Viola
-          }
-          \new Staff {
-            \set Staff.instrumentName = "Viola"
-            \Cello
           }
         >>
         \new ChoirStaff <<
@@ -85,7 +86,7 @@
         >>
         \new StaffGroup <<
           \new Staff {
-            \set Staff.instrumentName = "Contrabasso"
+            \set Staff.instrumentName = \markup \center-column { "Violoncello" "Contrabasso" }
             % \transpose c c,
             \BassoContinuo
           }
@@ -93,7 +94,7 @@
         \new FiguredBass { \BassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 2 = 60 }
     }
   }
 }

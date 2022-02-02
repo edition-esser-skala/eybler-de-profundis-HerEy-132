@@ -2,11 +2,17 @@
 
 #(define option-movement-title-format "title")
 #(define option-init-toc #t)
-#(define option-print-all-bar-numbers #t)
+#(define option-print-all-bar-numbers #f)
 \include "ees.ly"
 
 
+cb = \markup \remark "Cb."
+
+
 tempoDeProfundis = \tempoMarkup "Adagio"
+tempoClamavi = \tempoMarkup "Andante"
+tempoDomine = \tempoMarkup "Poco più mosso"
+tempoAlleluia = \tempoMarkup "Allegro"
 
 
 \include "notes/ob1.ly"
@@ -21,7 +27,6 @@ tempoDeProfundis = \tempoMarkup "Adagio"
 \include "notes/vl1.ly"
 \include "notes/vl2.ly"
 \include "notes/vla.ly"
-\include "notes/vlc.ly"
 \include "notes/S.ly"
 \include "notes/A.ly"
 \include "notes/T.ly"
